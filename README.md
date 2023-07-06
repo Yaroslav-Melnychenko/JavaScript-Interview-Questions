@@ -3,7 +3,7 @@
 ## Questions
 
 1. [Data Types](#data-types)
-2. [Hoisting. Scope and Scope Chain](#hoisting-scope-chain)
+2. [Hoisting. Scope and Scope Chain](#hoisting-and-scope-chain)
 3. [Debugger](#debugger)
 4. [Pass by type/reference. Deep cloning](#pass-by-type-reference-deep-cloning)
 5. [Strict Mode](#strict-mode)
