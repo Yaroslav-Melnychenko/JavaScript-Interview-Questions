@@ -5,8 +5,8 @@
 1. [Data Types](#data-types)
 2. [Hoisting. Scope and Scope Chain](#hoisting-scope-and-scope-chain)
 3. [Debugger](#debugger)
-4. [Pass by type/reference. Deep cloning](#pass-by-type-reference-deep-cloning)
-5. [Strict Mode](#strict-mode)
+4. [Strict Mode](#strict-mode)
+5. [Pass by type/reference. Deep cloning](#pass-by-type-reference-deep-cloning)
 6. [var, let, const](#var-let-const)
 7. [Error types](#error-types)
 8. [DOM and BOM](#dom-and-bom)
@@ -29,6 +29,7 @@
 25. [JavaScript Design Patterns](#javaScript-design-patterns)
 26. [OOP](#oop)
 27. [SODID](#solid)
+
 
 ## **Data Types**
 
@@ -105,3 +106,28 @@ function outerFunction() {
 }
 outerFunction();
 ```
+
+## **Debugger**
+Debugger can do following:
+- Setting Breakpoints
+- Inspecting Variables
+- Stepping through Code
+- Watching Expressions
+- Conditional Breakpoints
+- Handling Exceptions
+
+
+## **Strict Mode**
+Strict mode is a feature in JavaScript that enables a stricter set of rules and behaviors in the execution of code.
+- Strict mode throw errors if you assigning values to undeclared variables, using reserved keywords as variable names
+- It prevents the use of the with statement, which can cause scope-related issues, and restricts the usage of the eval() function, which can introduce security vulnerabilities.
+- In strict mode, the value of this is different in certain scenarios compared to non-strict mode. In functions that are not methods, this is set to undefined, rather than the global object (window in browsers).
+```javascript
+'use strict';
+
+function myFunction() {
+  console.log(this);
+}
+myFunction(); // Output: undefined
+```
+- Strict mode improves error handling by making it stricter and more informative. It throws errors for common mistakes like assigning values to read-only properties, duplicating function parameter names, or using delete on variables, functions, or function arguments.
