@@ -67,3 +67,41 @@ const obj = {
 };
 console.log(obj[key1]); // Output: value 1
 ```
+
+## **Hoisting. Scope and Scope Chain**
+
+### Hoisting
+Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scopes during the compilation phase. This means that you can use variables and call functions before they are declared in your code.
+However, only the declarations are hoisted, not the initializations or assignments. For example:
+```javascript
+console.log(x); // Output: undefined
+var x = 5;
+```
+
+### Scope
+Scope refers to the accessibility or visibility of variables, functions, and objects. In JavaScript, there are global scope and local scope (function scope and block scope). Variables defined within a scope are accessible only within that scope, unless they are explicitly shared with outer scopes. For example:
+```javascript
+function myFunction() {
+  var x = 10; // Local scope variable
+  console.log(x); // Output: 10
+}
+console.log(x); // Error: x is not defined (not accessible outside the function scope)
+```
+
+### Scope Chain
+The scope chain is a hierarchical structure that determines the accessibility of variables in nested functions. Each function has its own scope, and when a variable is referenced, JavaScript searches for that variable in the current scope and then follows the chain of nested scopes until it finds the variable or reaches the global scope
+```javascript
+var x = 10; // Global variable
+
+function outerFunction() {
+  var y = 20; // Outer function scope variable
+
+  function innerFunction() {
+    var z = 30; // Inner function scope variable
+    console.log(x + y + z); // Output: 60 (accessible through the scope chain)
+  }
+
+  innerFunction();
+}
+outerFunction();
+```
