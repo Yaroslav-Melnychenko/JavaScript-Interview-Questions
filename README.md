@@ -131,3 +131,26 @@ function myFunction() {
 myFunction(); // Output: undefined
 ```
 - Strict mode improves error handling by making it stricter and more informative. It throws errors for common mistakes like assigning values to read-only properties, duplicating function parameter names, or using delete on variables, functions, or function arguments.
+
+
+## **Pass by type/reference. Deep cloning**
+- "pass by value" for primitive types such as numbers, strings, booleans, null, and undefined
+```javascript
+let x = 2;
+let y = x;
+y++;
+
+console.log(x); // 2
+console.log(y); // 3
+```
+
+- "pass by reference" for non-primitive types such as objects
+```javascript
+let x = { name: 'John' };
+let y = x;
+
+x.name = 'Kate';
+
+console.log(x); // { name: 'Kate' }
+console.log(y); // { name: 'Kate' }
+```
