@@ -154,3 +154,34 @@ x.name = 'Kate';
 console.log(x); // { name: 'Kate' }
 console.log(y); // { name: 'Kate' }
 ```
+
+## **var, let, const**
+### var
+- Function-scoped
+- Hoisting
+- Reassignable
+- No block scope
+```javascript
+for (var i = 0; i < 10; i++) {
+	console.log('i', i); // "i", "from 1 to 9"
+} 
+console.log('out of block', i); // "out of block", 10
+```
+
+### let
+- Block-scoped
+- No hoisting
+- Reassignable
+- Temporal Dead Zone - accessed the variable earlier than its declaration would throw a ReferenceError
+```javascript
+for (let i = 0; i < 10; i++) {
+	console.log('i', i); // "i", "from 1 to 9"
+} 
+console.log('out of block', i); // Uncaught ReferenceError: i is not defined
+```
+
+### const
+- Block-scoped
+- No hoisting
+- Cannot be reassigned
+- Temporal Dead Zone (same as let)
