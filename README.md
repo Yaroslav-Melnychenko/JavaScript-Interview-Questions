@@ -155,6 +155,7 @@ console.log(x); // { name: 'Kate' }
 console.log(y); // { name: 'Kate' }
 ```
 
+
 ## **var, let, const**
 ### var
 - Function-scoped
@@ -185,3 +186,51 @@ console.log('out of block', i); // Uncaught ReferenceError: i is not defined
 - No hoisting
 - Cannot be reassigned
 - Temporal Dead Zone (same as let)
+
+
+## **Error types**
+- Syntax Error:
+```javascript
+// Missing closing parenthesis
+if (x > 5 {
+	console.log("x is greater than 5");
+}
+```
+
+- Reference Error:
+```javascript
+// Trying to access an undefined variable
+console.log(myVariable);
+```
+
+- Type Error - An error occurs when a value is used outside the scope of its data type.
+```javascript
+let num = 15;
+console.log(num.split("")); // converts a number to an array
+```
+
+- Evaluation Error - Current JavaScript engines and EcmaScript specifications do not throw this error. However, it is still available for backward compatibility. The error is called when the eval() backward function is used, as shown in the following code block:
+```javascript
+try{
+    throw new EvalError("'Throws an error'")
+} catch(error){
+    console.log(error.name, error.message)
+}
+```
+
+- RangeError - There is an error when a range of expected values is required, as shown below:
+```javascript
+const checkRange = (num)=>{
+    if (num < 30) throw new RangeError("Wrong number");
+    return true
+}
+checkRange(20);
+```
+
+- URI Error - When the wrong character(s) are used in a URI function
+```javascript
+console.log(decodeURI("https://www.educative.io/shoteditor"))
+console.log(decodeURI("%sdfk"));
+```
+
+-Internal Error - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.
