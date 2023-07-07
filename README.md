@@ -234,3 +234,11 @@ console.log(decodeURI("%sdfk"));
 ```
 
 -Internal Error - In the JS engine, this error occurs most often when there is too much data and the stack exceeds its critical size. When there are too many recursion patterns, switch cases, etc., the JS engine gets overwhelmed.
+
+## **DOM and BOM**
+
+### DOM - Document Object Model
+It represents the structure of an HTML or XML document as a tree-like model JavaScript can access and manipulate the DOM using the provided APIs
+
+### BOM - Browser Object Model
+The BOM provides objects such as window, document, navigator, history, and location, among others, which allow developers to interact with the browser and the webpage's content
