@@ -28,6 +28,7 @@
 24. [JavaScript Design Patterns](#javaScript-design-patterns)
 25. [OOP](#oop)
 26. [SOLID](#solid)
+27. [Big O notation](#big-o-notation)
 
 
 ## **Data Types**
