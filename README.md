@@ -242,3 +242,34 @@ It represents the structure of an HTML or XML document as a tree-like model Java
 
 ### BOM - Browser Object Model
 The BOM provides objects such as window, document, navigator, history, and location, among others, which allow developers to interact with the browser and the webpage's content
+
+## **Function declarations and differences**
+
+### Function Declaration
+```javascript
+function functionName(parameters) {
+  // Function body
+}
+```
+Function declarations are hoisted, which means they can be called before they are declared in the code.
+
+### Function Expression
+```javascript
+const functionName = function(parameters) {
+  // Function body
+};
+```
+Function expressions are not hoisted, so they can only be called after they are defined in the code.
+
+### Arrow Function Expression
+```javascript
+const functionName = (parameters) => {
+  // Function body
+};
+```
+Arrow functions have lexical scoping of this, which means the value of this inside the function is determined by the surrounding context.
+
+### Function Constructor
+```javascript
+var functionName = new Function('parameters', 'Function body');
+```
