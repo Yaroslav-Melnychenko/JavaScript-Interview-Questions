@@ -334,3 +334,25 @@ const multiplyByTwo = multiplyBy(2);
 console.log(multiplyByTwo(5)); // Output: 10
 
 ```
+
+
+## **Memoization**
+Memoization is reate cache object to store the results of function calls
+```javascript
+function fibonacci(n, memo = {}) {
+  if (n in memo) {
+    return memo[n]; // If the result is already cached, return it
+  }
+
+  if (n <= 2) {
+    return 1; // Base case for fibonacci sequence
+  }
+
+  const result = fibonacci(n - 1, memo) + fibonacci(n - 2, memo);
+  memo[n] = result; // Cache the result for future use
+  return result;
+}
+
+console.log(fibonacci(10)); // 55
+console.log(fibonacci(15)); // 610
+```
