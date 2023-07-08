@@ -369,3 +369,21 @@ const factorial = (n) => {
 
 console.log('factorial', factorial(5))
 ```
+
+
+## **Generator Functions**
+Generator Functions that can be used to create iterators
+```javascript
+ function* numberGenerator() {
+    yield 1;
+    yield 2;
+    yield 3;
+  }
+
+  const iterator = numberGenerator();
+
+  console.log(iterator.next().value); // Output: 1
+  console.log(iterator.next().value); // Output: 2
+  console.log(iterator.next().value); // Output: 3
+  console.log(iterator.next().value); // Output: undefined
+```
