@@ -614,3 +614,41 @@ console.log(key, val); // k1 {a: 1}
 k2 = null;
 console.log(wm.get(k2)); // undefined
 ```
+
+
+## **JavaScript Design Patterns**
+- Singleton Pattern:
+    The Singleton pattern ensures that a class has only one instance, and provides a global point of access to it.
+    This can be useful in scenarios where only a single instance of a class is required,
+    such as managing a shared resource or configuration.
+
+- Factory Pattern:
+    The Factory pattern is used to create objects without exposing the object creation logic directly to the client.
+    It provides a factory method that returns an instance of the object based on specific parameters or configurations.
+
+- Observer Pattern:
+    The Observer pattern establishes a one-to-many relationship between objects,
+    where when one object changes its state, all its dependents (observers) are notified and updated automatically. 
+    It is commonly used in event-driven systems or for implementing pub-sub architectures.
+
+- Module Pattern:
+    The Module pattern encapsulates a set of related variables and functions into a single object. 
+    It provides a way to create private variables and methods that are accessible only within the module, 
+    allowing for better organization and encapsulation of code.
+
+- Prototype Pattern:
+    The Prototype pattern creates objects by cloning an existing object (prototype) rather than creating new instances from scratch. 
+    It is useful when creating multiple objects with similar properties and behaviors, as it reduces the need for class 
+    instantiation and improves performance.
+
+- MVC (Model-View-Controller) Pattern:
+    The MVC pattern is a software architectural pattern that separates an application into 
+    three interconnected components: the Model (data and business logic), the View (presentation layer), 
+    and the Controller (handles user input and updates the model and view). It helps to achieve separation 
+    of concerns and promotes code organization and maintainability.
+
+- Decorator Pattern:
+    The Decorator pattern allows dynamically adding new behavior or modifying existing 
+    behavior of an object without affecting other instances of the same class. 
+    It involves wrapping an object with another object that provides additional functionality 
+    or alters the behavior of the original object.
