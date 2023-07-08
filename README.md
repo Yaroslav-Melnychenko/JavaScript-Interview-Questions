@@ -417,5 +417,24 @@ const button = document.querySelector('button');
 button.addEventListener('click', function() {
   console.log(this); // Refers to the button element
 });
-
 ```
+### "this" vs lexical envitonment
+The differences between the lexical environment and the this keyword in JavaScript:
+
+1. Definition:
+- Lexical Environment: The lexical environment is a data structure that holds variable and function declarations in a particular scope. It determines the accessibility and visibility of identifiers (variables and functions) based on the physical placement of code in the source file. Each function has its own lexical environment.
+- "this" Keyword: this is a special keyword in JavaScript that refers to the current execution context or the object that a function is being executed on. It is determined dynamically at runtime based on how the function is invoked.
+
+2. Scope Determination:
+- Lexical Environment: The lexical environment is determined statically based on the lexical (or static) structure of the code. It is created during the creation phase of a function and does not change during runtime.
+- "this" Keyword: The value of this is determined dynamically at runtime based on the way a function is called. It can have different values depending on the invocation context.
+
+3. Accessibility:
+- Lexical Environment: The lexical environment determines the accessibility of variables and functions based on their scope and the scope chain. Variables and functions defined in an outer scope are accessible in an inner scope, but not vice versa.
+- "this" Keyword: The this keyword provides access to the properties and methods of the current object or execution context. It allows you to refer to the object itself and access its members.
+
+4. Usage:
+- Lexical Environment: The lexical environment is primarily used for scoping and resolving identifiers within a function. It helps determine which variables and functions are accessible within a specific scope.
+- "this" Keyword: The this keyword is used to access and manipulate properties and methods within the context of the current object. It is often used in object-oriented programming to refer to the object on which a method is called.
+
+In summary, the lexical environment deals with scoping and the visibility of variables and functions based on the physical structure of the code, while the this keyword relates to the dynamic execution context of a function and provides access to the current object or execution context.
