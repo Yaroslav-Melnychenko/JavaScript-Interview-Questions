@@ -455,3 +455,52 @@ Hello.apply({ name: 'Kate' }, [4, 5, 6]);
 const HelloNew = Hello.bind({ name: 'Sara' }, 11, 22, 33);
 HelloNew();
 ```
+
+
+## Object Prototype
+Object prototypes are a way to define a blueprint or template for creating objects.
+
+There are multiple ways to work with object prototypes in JavaScript:
+
+1. Constructor Functions and the prototype Property:
+```javascript
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHello = function() {
+  console.log("Hello, my name is " + this.name);
+};
+
+const john = new Person("John");
+john.sayHello(); // Output: Hello, my name is John
+```
+
+2. The Object.create() method:
+```javascript
+const personPrototype = {
+  sayHello: function() {
+    console.log("Hello, my name is " + this.name);
+  }
+};
+
+const lili = Object.create(personPrototype);
+lili.name = "Lili";
+lili.sayHello(); // Output: Hello, my name is Lili
+```
+
+3. The class Syntax (ES6): ES6 introduced the class syntax. Under the hood, class still uses prototypes.
+```javascript
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHello() {
+    console.log("Hello, my name is " + this.name);
+  }
+}
+
+const andy = new Person("Andy");
+andy.sayHello(); // Output: Hello, my name is Andy
+```
