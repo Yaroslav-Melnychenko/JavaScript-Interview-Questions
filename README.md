@@ -13,7 +13,7 @@
 9. [Function declarations and differences](#function-declarations-and-differences)
 10. [Currying](#currying)
 11. [Closures](#closures)
-12. [Hign Order Functions](#high-order-functions)
+12. [High Order Functions](#high-order-functions)
 13. [Memoization](#memoization)
 14. [Recurcion](#recurcion)
 15. [Generator Functions](#generator-functions)
@@ -319,7 +319,7 @@ count.increase(); // "increase", 2
 ```
 
 
-## **Hign Order Functions**
+## **High Order Functions**
 Higher-order function is a function that does at least one of the following:
 - takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
 - returns a function as its result.
