@@ -551,3 +551,66 @@ Async/await provides a more intuitive way to write asynchronous code and helps a
 const response = await fetch('https://api.example.com/data');
 const data = await response.json();
 ```
+
+
+## **Set and WeakSet**
+###Set:
+- Adding and Removing Elements: add(), delete()
+- Checking the Size and Presence of Elements: size, has()
+- Iteration: for...of and forEach() loops
+- Unique Values: If you try to add a duplicate value, it will be ignored
+```javascript
+let obj = { name: 'John' };
+const set = new Set();
+set.add(obj);
+obj = null;
+console.log('set', set); // Set(1) {name: "John"}
+```
+
+### WeakSet
+No Iteration
+Limited Methods: It does not have methods like size or forEach
+Weakly Held References: do not prevent the referenced objects from being removed
+```javascript
+let obj = { name: 'John' };
+const set = new Set();
+set.add(obj);
+obj = null;
+console.log('set', set); // WeakSet {}
+```
+
+
+## **Map and WeakMap**
+Map and WeakMap - built-in data structures that allow you to store key-value pairs
+### Map
+Map is a collection of key-value pairs where the keys can be of any type.
+It has own methods: get(), has(), delete(), set(), for (const [key, value] of map) - iterate
+```javascript
+const map = new Map();
+map.set('key1', 1);
+map.set('key2', 2);
+console.log(map); // Map(2) {key1: 1, key2: 2}
+```
+
+### WeakMap
+- The keys in a WeakMap must be objects
+- WeakMap does not have a iterator methods, size property
+- They are held weakly (Garbage Collection)
+```javascript
+var k1 = {a: 1};
+var k2 = {b: 2};
+
+var map = new Map();
+var wm = new WeakMap();
+
+map.set(k1, 'k1');
+wm.set(k2, 'k2');
+
+k1 = null;
+map.forEach(function (val, key) {
+console.log(key, val); // k1 {a: 1}
+});
+
+k2 = null;
+console.log(wm.get(k2)); // undefined
+```
