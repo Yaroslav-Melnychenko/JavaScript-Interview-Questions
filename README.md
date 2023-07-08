@@ -652,3 +652,11 @@ console.log(wm.get(k2)); // undefined
     behavior of an object without affecting other instances of the same class. 
     It involves wrapping an object with another object that provides additional functionality 
     or alters the behavior of the original object.
+
+
+## **OOP**
+OOP, Object-Oriented Programming, is a programming paradigm that told us how the code should be organized.
+There are main 3 concepts:
+- Inheritance: allows classes to inherit properties and methods from other classes, promoting code reuse.
+- Polymorphism: used to create the functions with the same name and different execution
+- Encapsulation: hides internal details of an object and provides public interfaces for interaction
