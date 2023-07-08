@@ -21,14 +21,13 @@
 17. [bind(), call(), apply()](#bind-call-pply)
 18. [Object Prototype](#object-prototype)
 19. [Prototyping Inheritance](#prototyping-nheritance)
-20. [Prototype Design Pattern](#prototype-design-pattern)
-21. [Promises](#Promises)
-22. [Async/Await](#async-await)
-23. [Set and WeakSet](#set-weakset)
-24. [Map and WeakMap](#map-weakmap)
-25. [JavaScript Design Patterns](#javaScript-design-patterns)
-26. [OOP](#oop)
-27. [SODID](#solid)
+20. [Promises](#Promises)
+21. [Async/Await](#async-await)
+22. [Set and WeakSet](#set-weakset)
+23. [Map and WeakMap](#map-weakmap)
+24. [JavaScript Design Patterns](#javaScript-design-patterns)
+25. [OOP](#oop)
+26. [SOLID](#solid)
 
 
 ## **Data Types**
@@ -503,4 +502,52 @@ class Person {
 
 const andy = new Person("Andy");
 andy.sayHello(); // Output: Hello, my name is Andy
+```
+
+
+## **Prototyping Inheritance**
+```javascript
+  function Animal(name) {
+    this.name = name;
+  }
+
+  Animal.prototype.running = function() {
+    console.log(this.name, 'is running');
+  }
+
+  function Dog(name) {
+    this.name = name;
+  }
+
+  Dog.prototype = Object.create(Animal.prototype);
+
+  const dog1 = new Dog('🐩 ');
+  dog1.running();
+```
+
+## **Promises**
+Promises are used to handle asynchronous operations in javascript.
+
+Pending - Initial state of promise.
+Fulfilled - The async operation is completed.
+Rejected - The async operation has failed.
+Settled - Promise has been or rejected or fulfilled.
+
+```javascript
+const getValue = new Promise((resolve, reject) => {
+	setTimeout(() => {
+  	resolve('hello');
+  }, 1000);
+});
+
+getValue.then(res => console.log('res', res)) // "res", "hello" after 1 sec
+```
+
+
+## **Async/Await**
+Async/await provides a more intuitive way to write asynchronous code and helps avoid the complexities of nested callbacks or promise chains. However, it's still important to understand the underlying concepts of promises and how they work with async/await to handle errors and control the flow of your asynchronous code effectively.
+
+```javascript
+const response = await fetch('https://api.example.com/data');
+const data = await response.json();
 ```
