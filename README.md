@@ -356,3 +356,16 @@ function fibonacci(n, memo = {}) {
 console.log(fibonacci(10)); // 55
 console.log(fibonacci(15)); // 610
 ```
+
+
+## **Recurcion**
+```javascript
+const factorial = (n) => {
+	if (n === 1) return 1;
+  	if (n === 2) return 2;
+  
+  	return factorial(n - 1) * n;
+}
+
+console.log('factorial', factorial(5))
+```
