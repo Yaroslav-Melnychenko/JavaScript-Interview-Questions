@@ -22,7 +22,7 @@
 18. [Object Prototype](#object-prototype)
 19. [Prototyping Inheritance](#prototyping-nheritance)
 20. [Promises](#Promises)
-21. [Async/Await](#async-await)
+21. [Async Await](#async-await)
 22. [Set and WeakSet](#set-weakset)
 23. [Map and WeakMap](#map-weakmap)
 24. [JavaScript Design Patterns](#javaScript-design-patterns)
@@ -544,7 +544,7 @@ getValue.then(res => console.log('res', res)) // "res", "hello" after 1 sec
 ```
 
 
-## **Async/Await**
+## **Async Await**
 Async/await provides a more intuitive way to write asynchronous code and helps avoid the complexities of nested callbacks or promise chains. However, it's still important to understand the underlying concepts of promises and how they work with async/await to handle errors and control the flow of your asynchronous code effectively.
 
 ```javascript
