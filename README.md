@@ -387,3 +387,35 @@ Generator Functions that can be used to create iterators
   console.log(iterator.next().value); // Output: 3
   console.log(iterator.next().value); // Output: undefined
 ```
+
+
+## **"this" keyword**
+"this" allows you to access and manipulate properties and methods within the context of the current object.
+The value of "this" is determined dynamically based on how a function is called. It can have different values depending on the way the function is invoked.
+- Global scope: If this is used outside of any function or object, it refers to the global object, which is typically the window object in web browsers or the global object in Node.js.
+- Object method: When this is used inside a method of an object, it refers to the object itself. You can use this to access other properties or methods of the object.
+```javascript
+const myObject = {
+  property: 'value',
+  method: function() {
+    console.log(this.property); // Accessing property of the object
+  }
+};
+myObject.method(); // Outputs: "value"
+```
+- Constructor function: When a function is used as a constructor with the new keyword, this refers to the newly created instance of the object.
+```javascript
+function MyClass() {
+  this.property = 'value';
+}
+const myInstance = new MyClass();
+console.log(myInstance.property); // Outputs: "value"
+```
+- Event handler: In event-driven programming, when an event occurs and an event handler function is invoked, this typically refers to the element that triggered the event.
+```javascript
+const button = document.querySelector('button');
+button.addEventListener('click', function() {
+  console.log(this); // Refers to the button element
+});
+
+```
