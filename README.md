@@ -273,3 +273,19 @@ Arrow functions have lexical scoping of this, which means the value of this insi
 ```javascript
 var functionName = new Function('parameters', 'Function body');
 ```
+
+
+## **Currying**
+Currying is a concept in functional programming that transform a function with multiple arguments into a series of functions with single argument
+```javascript
+function add(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+const addCurried = add(5);
+console.log(addCurried(3)); // Output: 8
+
+console.log(add(5)(3)); // Output: 8
+```
