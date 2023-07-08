@@ -438,3 +438,20 @@ The differences between the lexical environment and the this keyword in JavaScri
 - "this" Keyword: The this keyword is used to access and manipulate properties and methods within the context of the current object. It is often used in object-oriented programming to refer to the object on which a method is called.
 
 In summary, the lexical environment deals with scoping and the visibility of variables and functions based on the physical structure of the code, while the this keyword relates to the dynamic execution context of a function and provides access to the current object or execution context.
+
+
+## **bind(), call(), apply()**
+call() and apply() are used to invoke a function with a specific "this" value and arguments.
+bind() creates a new function with a bound this value and optional arguments, which can be invoked later.
+```javascript
+function Hello(a, b, c) {
+  console.log(`Hello ${this.name}`);
+  console.log('Params', a, b, c);
+}
+
+Hello.call({ name: 'John' }, 1, 2, 3);
+Hello.apply({ name: 'Kate' }, [4, 5, 6]);
+
+const HelloNew = Hello.bind({ name: 'Sara' }, 11, 22, 33);
+HelloNew();
+```
