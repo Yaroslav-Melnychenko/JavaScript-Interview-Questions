@@ -317,3 +317,20 @@ const count = counter();
 count.increase(); // "increase", 1
 count.increase(); // "increase", 2
 ```
+
+
+## **Hign Order Functions**
+Higher-order function is a function that does at least one of the following:
+- takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
+- returns a function as its result.
+In js array methods like map(), filter(), reduce(),... is a high-order-functions
+```javascript
+function multiplyBy(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
+const multiplyByTwo = multiplyBy(2);
+console.log(multiplyByTwo(5)); // Output: 10
+
+```
