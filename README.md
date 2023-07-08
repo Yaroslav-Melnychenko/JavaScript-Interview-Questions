@@ -289,3 +289,31 @@ console.log(addCurried(3)); // Output: 8
 
 console.log(add(5)(3)); // Output: 8
 ```
+
+
+## **Closures**
+Closures it is the ability of a function to remember and access its lexical scope, even when it is executed outside that scope
+```javascript
+const counter = () => {
+  let count = 0;
+
+  const increase = () => {
+    count++;
+    console.log('increase, count = ', count);
+  }
+
+  const decrease = () => {
+    count--;
+    console.log('decrease, count = ', count);
+  }
+
+  return {
+    increase,
+    decrease
+  }
+}
+
+const count = counter();
+count.increase(); // "increase", 1
+count.increase(); // "increase", 2
+```
