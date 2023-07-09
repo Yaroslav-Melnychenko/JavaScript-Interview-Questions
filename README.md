@@ -31,6 +31,8 @@
 27. [React. What is it JSX?](#react-what-is-it-JSX)
 28. [React. What is it virtual DOM](react-what-is-it-virtual-DOM)
 29. [Redux. Reducer](redux-reducer)
+30. [Redux. Dispatch](redux-dispatch)
+31. [Redux. Action](redux-action)
 
 
 ## **Data Types**
