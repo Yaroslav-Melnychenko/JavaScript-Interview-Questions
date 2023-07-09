@@ -29,6 +29,8 @@
 25. [OOP](#oop)
 26. [SOLID](#solid)
 27. [React. What is it JSX?](#react-what-is-it-JSX)
+28. [React. What is it virtual DOM](react-what-is-it-virtual-DOM)
+29. [Redux. Reducer](redux-reducer)
 
 
 ## **Data Types**
@@ -681,3 +683,30 @@ High-level modules should not depend on low-level modules; both should depend on
 
 ## **React. What is it JSX**
 JavaScript XML. It is a syntax extension used in React. JSX allows developers to write HTML-like code within JavaScript, enabling them to define the structure and content of their components in a declarative and intuitive manner. JSX looks similar to HTML, but it's not actually HTML. It's a syntax extension that gets transformed into regular JavaScript using a transpiler like Babel before it can be executed by the browser.
+
+## **React. What is it virtual DOM**
+It is a lightweight copy of the actual DOM, which is a representation of the HTML structure of a web page. The virtual DOM exists in memory and is used to track and manage changes to the user interface.
+Here's how the virtual DOM works in React:
+- When you create a React component, you define its structure and behavior using JSX or JavaScript.
+- React uses the virtual DOM to create a virtual representation of the component's structure.
+- When changes occur in the component's state or props, React updates the virtual DOM with the new values.
+- React then performs a process called "reconciliation" to compare the previous virtual DOM with the updated one, determining the minimal set of changes needed to be made to the actual DOM.
+- Finally, React efficiently updates the real DOM by applying only the necessary changes, resulting in an optimized and performant rendering of the updated component.
+
+## **Redux. Reducer**
+Reducers are functions that take the current state and an action as arguments, and return a new state result.
+In other words, (state, action) => newState.
+
+## **Redux. Dispatch**
+Dispatch is a function provided by Redux that allows you to trigger an action.
+
+## **Redux. Action**
+In Redux, actions are plain JavaScript objects that contain type and payload value
+```javascript
+const incrementAction = {
+  type: 'INCREMENT',
+  payload: {
+    amount: 1
+  }
+};
+```
