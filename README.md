@@ -661,3 +661,19 @@ There are main 3 concepts:
 - Inheritance: allows classes to inherit properties and methods from other classes, promoting code reuse.
 - Polymorphism: used to create the functions with the same name and different execution
 - Encapsulation: hides internal details of an object and provides public interfaces for interaction
+
+## **SOLID**
+### Single Responsibility Principle (SRP):
+The class should do only one job. For example it it is User class ther should be logic related only for users. There should not be presend something else, for example logger data, erc.
+
+### Open-Closed Principle (OCP):
+Software entities (classes, modules, functions) should be open for extension but closed for modification. It means that you should be able to extend the behavior of a software entity without modifying its existing code.
+
+### Liskov Substitution Principle (LSP):
+The behavior of the base class should be preserved in its subclasses. In other words the extended class should not substitute the base class methods.
+
+### Interface Segregation Principle (ISP):
+Program entities should not depend on methods they do not use.
+
+### Dependency Inversion Principle (DIP):
+High-level modules should not depend on low-level modules; both should depend on abstractions. This principle promotes loose coupling between modules. It allows modules to be more independent, flexible, and easier to test and maintain.
