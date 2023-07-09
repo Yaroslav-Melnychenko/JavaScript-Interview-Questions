@@ -28,7 +28,7 @@
 24. [JavaScript Design Patterns](#javaScript-design-patterns)
 25. [OOP](#oop)
 26. [SOLID](#solid)
-27. [Big O notation](#big-o-notation)
+27. [React. What is it JSX?](#react-what-is-it-JSX)
 
 
 ## **Data Types**
@@ -677,3 +677,7 @@ Program entities should not depend on methods they do not use.
 
 ### Dependency Inversion Principle (DIP):
 High-level modules should not depend on low-level modules; both should depend on abstractions. This principle promotes loose coupling between modules. It allows modules to be more independent, flexible, and easier to test and maintain.
+
+
+## **React. What is it JSX**
+JavaScript XML. It is a syntax extension used in React. JSX allows developers to write HTML-like code within JavaScript, enabling them to define the structure and content of their components in a declarative and intuitive manner. JSX looks similar to HTML, but it's not actually HTML. It's a syntax extension that gets transformed into regular JavaScript using a transpiler like Babel before it can be executed by the browser.
