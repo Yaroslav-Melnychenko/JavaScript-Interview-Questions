@@ -71,6 +71,9 @@ const obj = {
   [key2]: "value 2"
 };
 console.log(obj[key1]); // Output: value 1
+
+// Object
+const user = { id: 1, name: 'John' }
 ```
 
 ## **Hoisting. Scope and Scope Chain**
