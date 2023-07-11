@@ -20,7 +20,7 @@
 16. ["this" keyword](#this-keyword)
 17. [bind(), call(), apply()](#bind-call-pply)
 18. [Object Prototype](#object-prototype)
-19. [Prototyping Inheritance](#prototyping-nheritance)
+19. [Prototyping Inheritance](#prototyping-inheritance)
 20. [Promises](#Promises)
 21. [Async Await](#async-await)
 22. [Set and WeakSet](#set-and-weakset)
