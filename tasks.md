@@ -117,3 +117,20 @@ const maxSubArray = (nums) => {
 
 console.log(maxSubArray([-1, 2, 5, 4, -5]))
 ```
+
+## Given a string, reverse each word in the sentence
+```javascript
+function reverseBySeparator(string, separator = "") {
+  return string.split(separator).reverse().join(separator);
+}
+
+console.log(reverseBySeparator('Hello, my name is Yaro'))
+```
+
+## Check if Palindrome
+```
+function isPalindrome(str) {
+	return str == str.split('').reverse().join('');
+}
+console.log(isPalindrome('level')) // true
+```
