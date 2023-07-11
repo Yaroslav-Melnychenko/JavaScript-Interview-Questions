@@ -101,7 +101,7 @@ const sum = (a) => {
 console.log(sum(1)(2)(4)())
 ```
 
-## Maximum subarray sum. [1, 2, 3, -5, 6, 7] => [6, 7]
+## Maximum subarray sum. [1, 2, 3, -5, 6, 7] => 13
 Solution 1.
 ```javascript
 const maxSequence = (arr, sum = 0) => arr.reduce((pre, val) => Math.max(sum = Math.max(sum + val, 0), pre), 0);
