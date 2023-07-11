@@ -100,3 +100,24 @@ const sum = (a) => {
 
 console.log(sum(1)(2)(4)())
 ```
+
+## Maximum subarray sum. [1, 2, 3, -5, 6, 7] => [6, 7]
+Solution 1.
+```javascript
+const maxSequence = (arr, sum = 0) => arr.reduce((pre, val) => Math.max(sum = Math.max(sum + val, 0), pre), 0);
+```
+
+Solution 2.
+```javascript
+const maxSequence = function(arr){
+  let min = 0;
+  let ans = 0;
+  let sum = 0;
+  for (let i = 0; i < arr.length; ++i) {
+    sum += arr[i];
+    min = Math.min(sum, min);
+    ans = Math.max(ans, sum - min);
+  }
+  return ans;
+}
+```
