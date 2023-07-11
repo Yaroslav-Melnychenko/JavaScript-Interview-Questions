@@ -128,7 +128,7 @@ console.log(reverseBySeparator('Hello, my name is Yaro'))
 ```
 
 ## Check if Palindrome
-```
+```javascript
 function isPalindrome(str) {
 	return str == str.split('').reverse().join('');
 }
