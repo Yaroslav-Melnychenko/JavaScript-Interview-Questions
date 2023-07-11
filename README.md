@@ -6,7 +6,7 @@
 2. [Hoisting. Scope and Scope Chain](#hoisting-scope-and-scope-chain)
 3. [Debugger](#debugger)
 4. [Strict Mode](#strict-mode)
-5. [Pass by type or reference. Deep cloning](#pass-by-type-or-reference-deep-cloning)
+5. [Pass by value or reference. Deep cloning](#pass-by-value-or-reference-deep-cloning)
 6. [var, let, const](#var-let-const)
 7. [Error types](#error-types)
 8. [DOM and BOM](#dom-and-bom)
@@ -140,7 +140,7 @@ myFunction(); // Output: undefined
 - Strict mode improves error handling by making it stricter and more informative. It throws errors for common mistakes like assigning values to read-only properties, duplicating function parameter names, or using delete on variables, functions, or function arguments.
 
 
-## **Pass by type or reference. Deep cloning**
+## **Pass by value or reference. Deep cloning**
 - "pass by value" for primitive types such as numbers, strings, booleans, null, and undefined
 ```javascript
 let x = 2;
