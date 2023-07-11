@@ -65,3 +65,38 @@ const getAllValues = (tree) => {
   return values;
 }
 ```
+## Write carrying sum. sum(1)(2)(3)...(n) => return 1 + 2 + 3 + ... + n
+Approach 1
+```javascript
+function sum(a) {
+
+  let currentSum = a;
+
+  function f(b) {
+    currentSum += b;
+    return f;
+  }
+
+  f.toString = function() {
+    return currentSum;
+  };
+
+  return f;
+}
+
+console.log(sum(1)(2)(4)(1)(2)(4).toString())
+```
+
+Approach 2
+```javascript
+const sum = (a) => {
+  return (b) => {
+    if (b) {
+      return sum(a + b);
+    }
+    return a;
+  }
+}
+
+console.log(sum(1)(2)(4)())
+```
