@@ -33,6 +33,7 @@
 29. [Redux. Reducer](#redux-reducer)
 30. [Redux. Dispatch](#redux-dispatch)
 31. [Redux. Action](#redux-action)
+32. [Event Loop](#event-loop)
 
 
 ## **Data Types**
@@ -715,3 +716,18 @@ const incrementAction = {
   }
 };
 ```
+
+## **Event Loop**
+Event Loop - runtime model which is responsible for executing the code, collecting and processing events, and executing queue of tasks. Event Loop is executin the code line by line by putting the code in a stack. In other hand there are a queue of tasks - microtasks and macrotasks.
+#### Microtasks:
+- Promises
+- enqueMicrotask
+- mutationObserver
+#### Macrotasks
+- timers (setTimeout and setInterval)
+- events (clck, load, erc.)
+- browser things (render, etc.)
+To summarize the event loop is helps us to run one-threaded asynchrony’s js code in a non-blocking way.
+
+### A few words about node js
+In a base of nodejs there are Libuv library. Libuv library is working with multi-threads (4 by default). From the 11.7 version of the node js we can work with threads by using worker_threads library.
