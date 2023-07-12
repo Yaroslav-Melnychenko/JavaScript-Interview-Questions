@@ -727,6 +727,7 @@ Event Loop - runtime model which is responsible for executing the code, collecti
 - timers (setTimeout and setInterval)
 - events (clck, load, erc.)
 - browser things (render, etc.)
+
 To summarize the event loop is helps us to run one-threaded asynchrony’s js code in a non-blocking way.
 
 ### A few words about node js
