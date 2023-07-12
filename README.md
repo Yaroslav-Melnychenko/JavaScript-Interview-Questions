@@ -728,7 +728,7 @@ Event Loop - runtime model which is responsible for executing the code, collecti
 - events (clck, load, erc.)
 - browser things (render, etc.)
 
-To summarize the event loop is helps us to run one-threaded asynchrony’s js code in a non-blocking way.
+To summarize the event loop is helping us to run one-threaded asynchrony’s js code in a non-blocking way.
 
 ### A few words about node js
 In a base of nodejs there are Libuv library. Libuv library is working with multi-threads (4 by default). From the 11.7 version of the node js we can work with threads by using worker_threads library.
