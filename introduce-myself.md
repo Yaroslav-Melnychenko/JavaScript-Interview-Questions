@@ -23,12 +23,6 @@ government agencies find it. I participated at various tasks, for example:
 
 - And also I worked on the general tickets like new pages, features, tables, endpoints and so on
 
-Before this project I spent four years on Scanovate — a client life-cycle and identity
-management platform — where I was the key frontend developer across four products:
-dashboards with huge amounts of data, a drag-and-drop workflow and mobile interaction
-builder, authorization flows, and a form builder for administrators. I also built the
-Node.js API services behind them with Express and MongoDB.
-
 ## Why I'm looking for a new company
 
 First of all I want to tell that i really enjoyed the projects / companies i participated.
