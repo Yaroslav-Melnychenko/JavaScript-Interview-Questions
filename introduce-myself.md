@@ -1,14 +1,38 @@
-Hello, my name is Yaroslav, I am from Ukraine but I am living in Budapest right now.
-I have 6 years of commercial experience working in IT. I used to work with this technologies JavaScript, TypeScript, React, NodeJS, Redux, MongoDB, CSS.
-I have experience to build a project from scratch and deliver successful result from concept to completion.
+# Interview intro — "Tell me about yourself"
 
-Currently I am participating in Scanovate project that provides our clients life-cycle and identity management.
-So, what I am doing now:
-- Developing front end components and modules on React. This includes dashboards with huge amount of data, workflow and mobile interaction builders, authorizations processes, and so on
-- Developing Node.js API services. In project I used to work with express and mongoDB for writing server side application logic
-- Integrated and aggregated different API
-- Improved functionality and performance of existing company project
+## Intro
 
-Why I am living current company?
-I have been working with my current organisation for four years. I am really enjoed to work in it. But, I feel like I have reached a saturation point in my learning experience in this organisation.
-Also there was some reorganization in my current company and they decided almost everyone to be fired. I feel like I'm ready to take on more responsibility.
+Hello, my name is Yaroslav. I'm from Ukraine, but right now I'm living in Budapest.
+I have more than 9 years of commercial experience in IT, as a full stack engineer with a
+frontend focus. My main technologies are JavaScript, TypeScript and React, plus Node.js, Express, Elasticsearch and NestJS.
+
+## What I'm doing now
+
+Currently I'm a Senior Full Stack Engineer on the IVIX project. The main goal of the
+company is to prevent financial crime — we build a platform that helps
+government agencies find it. I participated at various tasks, for example:
+
+- I build from scratch the whole authentication and authorization layer using Keycloak.
+  Multi-tenancy, role-based access control, protected routes was implemented and integrated on frond end plus backend layer.
+  Also working with Keycloakify to write a custom login themes.
+
+- I worked with app performance - analyze bundle, route-level code splitting, duplicated dependencies and so on
+
+- I worked closely with the design team. I did the migration from Material UI to And Design.
+  Plus I build a custom Deign System and Storybook components using Radix UI and shadcn/ui.
+
+- And also I worked on the general tickets like new pages, features, tables, endpoints and so on
+
+Before this project I spent four years on Scanovate — a client life-cycle and identity
+management platform — where I was the key frontend developer across four products:
+dashboards with huge amounts of data, a drag-and-drop workflow and mobile interaction
+builder, authorization flows, and a form builder for administrators. I also built the
+Node.js API services behind them with Express and MongoDB.
+
+## Why I'm looking for a new company
+
+First of all I want to tell that i really enjoyed the projects / companies i participated.
+And of course it was not easy decision to change the company.
+But I feel like I have reached a saturation point in my learning experience in this organisation.
+I'm ready to take on more responsibility, and that's why I'm looking for a new challenge.
+
